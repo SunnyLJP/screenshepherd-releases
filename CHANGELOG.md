@@ -9,6 +9,22 @@ and published to this repo's Releases page.
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-09-14
+
+Two fixes found in real services on 13 September.
+
+### Fixed
+
+- **Section jumps.** Going back to a chorus, or to any earlier section, could
+  be recognised and then refused, every time, for a whole service — while
+  ordinary forward advances kept working. On some ProPresenter versions a
+  check the app made before every jump could never pass. It fires now.
+- **Changing songs.** If ProPresenter was briefly unreadable at the moment of
+  a song change — which is exactly when it is busiest — the app could keep
+  showing the previous song's slides until the next song change. It retries a
+  second later now.
+
+
 ## [0.1.1] — 2026-09-12
 
 Built for a service running on a mac that has never seen it, with ProPresenter
