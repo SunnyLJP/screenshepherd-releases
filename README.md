@@ -12,10 +12,12 @@ The app, the site and the docs live in their own repos, and those are private.
 Every build is published to [Releases](../../releases) as a `.dmg` (what you
 want) and a `.zip` (what the auto-updater uses — you can ignore it).
 
-> **Nothing has been released yet.** Builds are not yet signed with a
-> Developer ID or notarised by Apple, and an unsigned build downloaded from
-> the internet is one macOS refuses to open. The first release here will be a
-> signed one.
+Every build is signed with a Developer ID and notarised by Apple, so macOS
+opens it normally — no warnings and no right-clicking.
+
+**ScreenShepherd needs a subscription.** The download is open to anyone, and
+the app asks for a licence key the first time it opens. Start a free trial at
+[screenshepherd.live](https://screenshepherd.live).
 
 ## Requirements
 
