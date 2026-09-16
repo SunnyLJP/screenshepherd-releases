@@ -1,0 +1,24 @@
+.DS_Store
+
+# Local scratch state, not project config.
+.claude/
+
+# THIS REPO IS PUBLIC, and it is a download host — "It holds no source code."
+#
+# Release artifacts are uploaded to the Releases page with `gh release create`
+# from screenshepherd-app/release/. They are attachments; they never belong in
+# the tree. A 690 MB dmg committed here could not be taken back — a public repo
+# that people and mirrors have already cloned keeps its history.
+*.dmg
+*.zip
+*.blockmap
+latest-mac.yml
+
+# Nothing with a credential in it belongs in any repo, and least of all in a
+# public one. Belt-and-braces: these are the shapes that would do the damage.
+.env
+.env.*
+*.p8
+*.p12
+*.key
+*.pem
