@@ -9,14 +9,14 @@ The app, the site and the docs live in their own repos, and those are private.
 
 ## Downloads
 
-Every build is published to [Releases](../../releases) as a `.dmg` (what you
+Every build is published to [Releases](https://github.com/SunnyLJP/screenshepherd-releases/releases) as a `.dmg` (what you
 want) and a `.zip` (what the auto-updater uses — you can ignore it).
 
 Every build is signed with a Developer ID and notarised by Apple, so macOS
 opens it normally — no warnings and no right-clicking.
 
 **ScreenShepherd needs a subscription.** The download is open to anyone, and
-the app asks for a licence key the first time it opens. Start a free trial at
+the app asks you to sign in the first time it opens. Start a free trial at
 [screenshepherd.live](https://screenshepherd.live).
 
 ## Requirements

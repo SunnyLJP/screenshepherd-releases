@@ -7,7 +7,21 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
-## [Unreleased]
+## [0.2.0] — unreleased
+
+### Added
+
+- **Sign in to activate.** The app asks for an email and password the first
+  time it opens. There is no licence key to paste.
+- **A 7-day free trial, then a subscription.** A card is taken at signup and
+  nothing is charged until the trial ends.
+- **Create an account from the Mac.** Pressing **Create an account** on the
+  sign-in card opens the browser, and the Mac links itself when signup
+  finishes.
+
+### Removed
+
+- Keyboard shortcuts.
 
 ## [0.1.2] — 2026-09-14
 
