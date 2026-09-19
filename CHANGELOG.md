@@ -7,6 +7,14 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.3] — 2026-09-20
+
+### Fixed
+
+- **Windows finds your audio devices.** The first Windows build asked the
+  ASIO drivers for devices and got one entry per driver, slowly, or nothing.
+  It now lists what Windows' own sound settings list.
+
 ## [0.2.2] — 2026-09-20
 
 ### Added
