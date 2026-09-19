@@ -7,7 +7,7 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
-## [0.2.0] — unreleased
+## [0.2.0] — 2026-09-19
 
 ### Added
 
@@ -18,12 +18,28 @@ and published to this repo's Releases page.
 - **Create an account from the Mac.** Pressing **Create an account** on the
   sign-in card opens the browser, and the Mac links itself when signup
   finishes.
+- **Email confirmation.** Signing up sends one email; tapping it finishes the
+  setup. If the Mac's sign-in card says the address is not confirmed yet, it
+  offers to send the link again.
+- **Manage account** in settings opens your account page already signed in —
+  billing, your card, and your password live there, because the app runs
+  with the wifi off.
+- **Email**, for the things that matter: a welcome, a warning before the trial
+  ends, and a note when a computer is activated.
+
+### Changed
+
+- One radius everywhere. Nothing in the app is a pill any more.
+- The wordmark reads ScreenShepherd, one word, like everything else.
+- The developer console is no longer offered to every church. It is ours.
 
 ### Removed
 
 - Keyboard shortcuts.
 
 ## [0.1.2] — 2026-09-14
+
+*Built and tested, never uploaded. The fixes below shipped in 0.2.0.*
 
 Two fixes found in real services on 13 September.
 
