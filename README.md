@@ -9,11 +9,19 @@ The app, the site and the docs live in their own repos, and those are private.
 
 ## Downloads
 
-Every build is published to [Releases](https://github.com/SunnyLJP/screenshepherd-releases/releases) as a `.dmg` (what you
-want) and a `.zip` (what the auto-updater uses — you can ignore it).
+Every build is published to [Releases](https://github.com/SunnyLJP/screenshepherd-releases/releases).
 
-Every build is signed with a Developer ID and notarised by Apple, so macOS
+- **Mac:** the `.dmg` is what you want. The `.zip` is what the auto-updater
+  uses — you can ignore it.
+- **Windows:** the `-x64-setup.exe`, from 0.2.2 on.
+
+The Mac build is signed with a Developer ID and notarised by Apple, so macOS
 opens it normally — no warnings and no right-clicking.
+
+The Windows build is not yet code-signed, so SmartScreen shows **Windows
+protected your PC** on first run. Press **More info**, then **Run anyway**.
+The file is exactly what this page lists: check the SHA-512 in `latest.yml`
+if you want to be sure.
 
 **ScreenShepherd needs a subscription.** The download is open to anyone, and
 the app asks you to sign in the first time it opens. Start a free trial at
@@ -23,6 +31,8 @@ the app asks you to sign in the first time it opens. Start a free trial at
 
 - **macOS 14 (Sonoma) or later**, Apple silicon. Not macOS 13 — the audio
   engine uses a Metal API that does not exist there, so it cannot launch.
+- or **Windows 10 or 11**, 64-bit. Transcription runs on the CPU on Windows,
+  so a machine from the last few years is a good idea.
 - ProPresenter 7, with **Settings → Network** enabled.
 - An audio interface, and a channel carrying the vocal.
 

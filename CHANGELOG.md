@@ -7,6 +7,24 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.2] — 2026-09-20
+
+### Added
+
+- **Windows.** A 64-bit installer, from the same release as the Mac build.
+  Not yet code-signed: SmartScreen asks once before the first run.
+
+### Fixed
+
+- Setup asks for the microphone, and a remembered input now opens without
+  being re-chosen. (Mac, 2026-09-19.)
+
+## [0.2.1] — 2026-09-19
+
+### Added
+
+- A first-run walkthrough for a church that has just paid.
+
 ## [0.2.0] — 2026-09-19
 
 ### Added
