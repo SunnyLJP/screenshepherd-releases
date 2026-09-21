@@ -45,3 +45,9 @@ See [CHANGELOG.md](CHANGELOG.md), and the notes on each individual release.
 Setup, the live-service runbook and the safety model are documented at the
 docs site. Issues on this repo are for **downloads and updates only** — it is
 a distribution point, not where the app is developed.
+
+## For the maintainer
+
+Nothing that signs, notarises or publishes a build is in this repo, and no
+GitHub token ships in the app. The credentials and the release procedure are
+documented in the private app repo (`SECRETS.md` and `CLAUDE.md`).
