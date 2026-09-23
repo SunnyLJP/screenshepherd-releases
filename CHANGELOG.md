@@ -7,7 +7,11 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
-## [0.2.4] — 2026-09-23
+## [0.2.5] — 2026-09-23
+
+0.2.4 was built and withdrawn before it was published: its first quit wrote
+inside its own app bundle, and macOS then refused to open it. 0.2.5 is the
+same release with that fixed.
 
 ### Added
 
