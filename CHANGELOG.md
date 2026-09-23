@@ -7,6 +7,42 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.4] — 2026-09-23
+
+### Added
+
+- **Announcements.** When the presentation on screen is a deck of notices
+  rather than a song, the app follows the host: as they talk about an item,
+  the matching slide comes up. It listens for each slide's name and text, and
+  reads the words off the slide's picture too.
+- **It listens with nothing on screen.** With ProPresenter on the logo, or
+  cleared to black, the first song the band starts is found and opened on
+  the line being sung. No more opening the first song by hand.
+- **ProPresenter on another computer.** The address field is back in setup
+  and settings, pre-filled for the usual case of ProPresenter on this
+  computer.
+- **Windows: every desk channel.** The input picker lists ASIO drivers
+  beside Windows' own devices, so a USB desk offers all of its channels, not
+  the stereo pair Windows sees.
+
+### Fixed
+
+- **A silent input says so.** If the audio interface stops delivering sound,
+  the Control Panel goes to Needs attention within a few seconds and names
+  the device, instead of staying green. Reconnecting recovers on its own.
+- **Fewer words lost.** A filter that had been discarding real singing on
+  busy stages is off. In one test it had thrown away one in seven sung
+  windows.
+- **Words back sooner** after a long instrumental: a confidently matched
+  line puts the slide back.
+- **One computer type.** The developer console and the services page are
+  gone; every account sees the same app.
+- The account page names each computer by its actual name instead of
+  calling all of them "This computer".
+
+Mac: requires macOS 14 or later, Apple silicon. Windows: 10 or 11, 64-bit,
+not yet code-signed — SmartScreen asks once before the first run.
+
 ## [0.2.3] — 2026-09-20
 
 ### Fixed
