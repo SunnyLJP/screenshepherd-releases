@@ -7,6 +7,44 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.6] — 2026-09-27
+
+Speed, and two ways the screen could stop following.
+
+### Changed
+
+- **The slides land noticeably sooner.** The app now times itself when it
+  starts and runs as fast as the computer it is on allows, instead of at a
+  fixed pace set on one developer's Mac. On an M2 that is roughly twice the
+  old rate. A slower computer gets a slower pace rather than falling behind,
+  and the Control Panel still says so if it cannot keep up.
+
+### Fixed
+
+- **The screen no longer stops at the end of a chorus.** On a section that
+  ended with a short line — a three-word tag like "Your Presence Lord" — the
+  app was waiting for a kind of evidence that a line that short can never
+  produce, and the screen stayed there for the rest of the song. It now waits
+  to hear the next thing sung and goes wherever those words belong: on with
+  the song, or round again if the band repeats.
+- **It stops hopping between songs.** Running faster made the song detector
+  accept evidence at the speed it arrived rather than the speed it was sung,
+  and in one test it changed song six times in three minutes. It now needs
+  real singing between one piece of evidence and the next.
+- **A repeat written into the file goes forwards.** Where a church has typed
+  the chorus in twice — Chorus, Chorus, Bridge — the second pass now moves on
+  to the second copy instead of jumping back to the first, so the song still
+  reaches the bridge.
+- **It cannot go quietly deaf.** One failed piece of audio processing could
+  stop the app listening for the rest of the service with nothing on screen
+  to say so. It recovers now, and a run of unusable audio is cut short
+  instead of holding everything up.
+- **Less lost at the start of a line.** Words are no longer discarded by a
+  measurement that was reading about a third less singing than was there.
+
+Mac: requires macOS 14 or later, Apple silicon. Windows: 10 or 11, 64-bit,
+not yet code-signed — SmartScreen asks once before the first run.
+
 ## [0.2.5] — 2026-09-23
 
 0.2.4 was built and withdrawn before it was published: its first quit wrote
