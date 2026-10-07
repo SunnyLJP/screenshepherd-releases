@@ -7,6 +7,59 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.8] — 2026-10-07
+
+Steadier through a long service, one download for every Mac, and a Windows
+build that hears properly.
+
+### Fixed
+
+- **It no longer falls behind when ProPresenter is busy.** With video or
+  backgrounds playing on the same computer, the part of the app that picks
+  singing out of the room was waiting its turn behind everything else, and
+  the Control Panel said the computer was struggling. It now stays at full
+  speed however busy the computer is.
+- **A stray word can't change the song.** After a quiet moment, one word that
+  also appears in another song could switch to it for a few seconds. A song
+  change now needs several different words of the new song.
+- **Restart listening really restarts.** From the menu, after allowing the
+  microphone, or after signing out and back in, the app used to stay on
+  "Starting…" until it was quit.
+- **A Mac activated from the website stays activated.** On its second launch
+  with internet, it could be sent back to the sign-in screen.
+- **The vocal mics survive the desk being switched on late.** If the audio
+  interface wasn't connected when the app opened, it could listen to input 1
+  for the whole service instead of the channels you chose.
+- **It picks up where it left off after a crash**, however far into the
+  service, instead of coming back not listening.
+- **A slow network at launch no longer asks a signed-in church to sign in.**
+- **It always listens for English.** Every so often it tried to work out
+  which language was being sung, and sometimes guessed wrong.
+
+### Changed
+
+- **One download for every Mac.** The same app runs natively on Apple
+  silicon and on Intel Macs with macOS 14 or later, and works out which it is
+  on by itself. Intel support is new: if anything doesn't behave, tell us.
+- **Windows hears properly.** The Windows build now uses more of the
+  computer's processor to listen, and ships the Microsoft components it needs,
+  so it runs on a PC that has never had them installed. Still new: tell us
+  how it goes.
+- **An unplugged interface is named.** If the audio interface drops off its
+  cable, the status says so by name and that it is waiting for it, and the
+  app picks it back up by itself the moment it is plugged in again.
+- **One voice model, and a smaller download.** The app uses its faster voice
+  model everywhere, with no setting to change, and the download is about
+  490 MB smaller.
+- **It keeps the computer awake while it listens**, so a booth computer
+  nobody touches during a service doesn't go to sleep mid-song.
+- **Recordings no longer fill the disk.** The app keeps two weeks of its
+  service recordings, up to 5 GB, and removes older ones.
+- **Sign-in works behind a church network filter or proxy.**
+- **Less work in the background.** Audio is converted more efficiently, and
+  the app's windows stop drawing when nobody can see them, leaving more of the
+  computer for ProPresenter.
+
 ## [0.2.6] — 2026-09-27
 
 Speed, and two ways the screen could stop following.
