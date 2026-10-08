@@ -7,6 +7,39 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.9] — 2026-10-08
+
+Sign in with Google, and fixes for the ways a long service could stop it
+following or slow the computer down.
+
+### Added
+
+- **Continue with Google.** The sign-in screen has a "Continue with Google"
+  button. It opens your browser at the ScreenShepherd website, you pick your
+  Google account, and the app signs itself in. If you already signed up with
+  Google on the website, your browser remembers you and the app links
+  straight away.
+
+### Fixed
+
+- **One slow answer from ProPresenter no longer stops it following.** If
+  ProPresenter took too long to reply even once, the app could stop noticing
+  slide changes made in ProPresenter for the rest of the service while still
+  showing green. It now carries on, and reconnects by itself if ProPresenter
+  stops answering altogether.
+- **It no longer signs a church out during a service.** The app now waits
+  until a service is over to refresh its sign-in, and a dropped connection is
+  treated as being offline, not as being signed out.
+- **Less load over a long service.** It looks through the ProPresenter
+  library less often while listening, saves its song cache without pausing,
+  and no longer piles up work each time the audio input restarts.
+- **The update is downloaded once.** An update waiting to install was being
+  copied and checked again every six hours while the app stayed open.
+- **Sending service logs no longer slows the app** on a computer that has
+  been running for days.
+- **The Control Panel stops drawing when it's hidden**, leaving more of the
+  computer for ProPresenter.
+
 ## [0.2.8] — 2026-10-07
 
 Steadier through a long service, one download for every Mac, and a Windows
