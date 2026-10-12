@@ -7,6 +7,35 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.10] — 2026-10-12
+
+Better at slides that hold one line each, and much faster on Windows.
+
+### Fixed
+
+- **Short, one-line slides are followed properly.** On a presentation with
+  one line per slide, a single word shared by two slides could make the app
+  jump to the wrong one and back. It now waits for at least two words before
+  moving anywhere it wasn't expecting.
+- **A short line that ends a section moves on straight away.** It no longer
+  waits to hear what comes next, so it keeps up with quick slides. If the band
+  goes round the chorus again, the app comes back to it within a second or so.
+- **A two-word line can be shown on time.** The app needed three words of a
+  slide before it would move to it, so a two-word line was often over before
+  it appeared.
+- **Repeating a chorus no longer puts the next section up early** on a longer
+  slide, and a new song starting right after a section is no longer missed
+  because the app moved on a slide first.
+- **No more double skips.** If someone at the desk moved ProPresenter on just
+  before the app did, the screen could jump two slides. The app now checks
+  where ProPresenter really is before it moves.
+- **Slides turned off in ProPresenter stay off.** The app never moves to a
+  slide that has been disabled.
+- **Windows: about five times faster at hearing.** On many Windows computers
+  the app could only keep up with part of the singing. It now uses a version
+  of its speech recognition built for modern processors, and falls back to
+  the old one on computers that can't run it.
+
 ## [0.2.9] — 2026-10-08
 
 Sign in with Google, and fixes for the ways a long service could stop it
