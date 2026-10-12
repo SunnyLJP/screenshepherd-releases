@@ -7,6 +7,31 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.11] — 2026-10-12
+
+Signing up with Google now signs the app in too, and the app always needs
+an account with a subscription.
+
+### Fixed
+
+- **"Open ScreenShepherd" opens the app signed in.** After signing up or
+  signing in on the website — with Google or with email — the app now opens
+  signed in as you. Before, it opened signed out and asked for a password,
+  which an account made with Google doesn't have.
+- **Continue with Google in the app's settings,** as well as on the sign-in
+  screen.
+
+### Changed
+
+- **The app needs you to be signed in.** If this computer isn't signed in,
+  ScreenShepherd asks you to sign in once when it next opens. Use the same
+  way you signed up: Google, or your email and password. Being offline is
+  fine: a computer that was signed in keeps working on a Sunday with no
+  internet, as before.
+- **The subscription goes with the account that is signed in.** Signing in
+  with an account that has no subscription stops listening, after a warning,
+  and offers to start your free trial.
+
 ## [0.2.10] — 2026-10-12
 
 Better at slides that hold one line each, and much faster on Windows.
