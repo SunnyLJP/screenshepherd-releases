@@ -7,6 +7,30 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.12] — 2026-10-18
+
+ScreenShepherd now turns a quiet desk up by itself, so slides keep up when the
+sound reaching it is faint.
+
+### Added
+
+- **Input level, on Auto.** Under the vocal channels in Settings. When the desk
+  sends ScreenShepherd only a faint signal, Auto turns it up so every line is
+  heard, and it leaves a good level alone. It holds still between songs and
+  remembers the level for next time. **Manual** gives you a slider instead, and
+  **Off** uses the sound exactly as it arrives, as before.
+- **The meters show the level after the boost,** so you can see what
+  ScreenShepherd is hearing while you set it.
+- **Warnings when the level is wrong.** "Very quiet — turn the desk up" when
+  even the boost isn't enough, and "Too loud — turn the desk down" when the
+  sound is already distorted when it arrives.
+
+### Fixed
+
+- **Slides moving late on a quiet feed.** A faint desk send meant whole lines
+  went unheard, so slides changed a line or two after the singers.
+- **Changing the vocal channel no longer resets other audio settings.**
+
 ## [0.2.11] — 2026-10-12
 
 Signing up with Google now signs the app in too, and the app always needs
