@@ -7,6 +7,47 @@ Notable changes to ScreenShepherd. Format follows
 Only released builds appear here. Versions are cut from the private app repo
 and published to this repo's Releases page.
 
+## [0.2.13] — 2026-10-29
+
+Updating is now one button, and a desk that macOS can see but ScreenShepherd
+couldn't is found.
+
+**To get this update:** it arrives the old way, one last time. Quit
+ScreenShepherd after your service, **wait ten seconds**, then open it again.
+Opening it straight away can stop the update from installing. From 0.2.13 on
+you won't need to do this.
+
+### Added
+
+- **An update button on the front page.** When a new version is ready it says
+  **Restart to update to …**. Press it and ScreenShepherd closes and opens
+  again as the new version by itself. It never updates during a service: while
+  ScreenShepherd is listening the button says **Update after the service** and
+  waits.
+- **A refresh button beside the audio device list,** and ScreenShepherd now
+  looks for devices by itself every few seconds when it isn't listening, so a
+  desk plugged in after the app opened shows up on its own.
+- **When macOS can see an interface that ScreenShepherd can't open,** the
+  device list says so by name instead of leaving it out silently.
+
+### Fixed
+
+- **USB desks missing from the device list on a Mac.** Some desks show up in
+  Audio MIDI Setup with all their inputs but never appeared in ScreenShepherd,
+  even after restarting. They are listed now.
+- **Slow hymns.** A planned song sung slowly, such as It Is Well, is now
+  recognised from its opening lines instead of being missed.
+- **Many smaller reliability fixes** found in a full review of the app: a
+  subscription check that can't reach the internet keeps the app running, a
+  half-written licence file no longer stops it opening, and a song change made at
+  the desk is never lost mid-switch.
+
+### Windows
+
+- The Windows build is still not code-signed. SmartScreen shows **Windows
+  protected your PC**: press **More info**, then **Run anyway**. On a PC with
+  Smart App Control on, Windows refuses it outright; email us if that happens.
+
 ## [0.2.12] — 2026-10-18
 
 ScreenShepherd now turns a quiet desk up by itself, so slides keep up when the

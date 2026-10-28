@@ -21,7 +21,9 @@ opens it normally — no warnings and no right-clicking.
 The Windows build is not yet code-signed, so SmartScreen shows **Windows
 protected your PC** on first run. Press **More info**, then **Run anyway**.
 The file is exactly what this page lists: check the SHA-512 in `latest.yml`
-if you want to be sure.
+if you want to be sure. On a Windows 11 PC with **Smart App Control** on, an
+unsigned program is refused with no way past it; email us if you see that.
+Signing the Windows build is under way.
 
 **ScreenShepherd needs a subscription.** The download is open to anyone, and
 the app asks you to sign in the first time it opens. Start a free trial at
